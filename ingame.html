@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link href="css.css" rel="stylesheet" type="text/css">
+    <script src ="timer.js"></script>
+    <script src = "setgame.js"></script>
+    <title>Ingame</title>
+</head>
+<body onload="startClock(); setting(); setGame(); setData();">
+
+    <div id = "Left" onclick="WhoW(this)">
+        <image_1 id = "left_ingame"><img  src="./img/ingame/0.png"></image_1>
+        <image_3 id = "left_portrait"><img src="./img/portrait/0.png"></image_3>
+        <left_name id = "left_name" >교육용 오뚜기 토끼</left_name>
+        <left_id id = "left_number">0-00-00</left_id>
+    </div>
+
+    <div id = "Right" onclick="WhoW(this)">
+        <image_4 id = "right_portrait"><img src="./img/portrait/2.png"></image_4>
+        <image_2 id = "right_ingame"><img  src="./img/ingame/2.png"></image_2>
+        <right_name id ="right_name">불타버린 소녀</right_name>
+        <right_id id = "right_number">F-01-02</right_id>
+    </div>
+        <vs>VS</vs>
+        
+        <clock id = "clock">now loading</clock>
+        <stage ><span id = "Ngang"></span>강 <span id = "now">g / l</span></stage>
+    </body>
+</html>

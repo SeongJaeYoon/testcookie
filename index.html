@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link type="text/css" rel = "stylesheet" href = "css.css">
+    <script>
+      function setCookie(name, value, exp) {
+        console.log(name + value);
+        var date = new Date();
+        date.setTime(date.getTime() + exp*24*60*60*1000);
+        document.cookie = name + '=' + value + ';expires=' + date.toUTCString() + ';path=/';
+      }
+    
+    </script>
+    <title>Main</title>
+</head>
+<body>
+
+    <maintitle>환상체 이상형 월드컵</maintitle>
+    <gang>
+        <gang16 onclick="setCookie('gang', 16, 3)"><div id="16강" >16강</div></gang16>
+        <gang32 onclick="setCookie('gang', 32, 3)"><div id="32강">32강</div></gang32>
+        <gang64 onclick="setCookie('gang', 64, 3)"><div id="64강">64강</div></gang64>
+    </gang>
+</body>
+</html>

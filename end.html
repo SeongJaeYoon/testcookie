@@ -13,8 +13,8 @@
             var winner_p = document.getElementById("winner초상화");
             var winner_name = document.getElementById("winnername");
 
-            winner_p.innerHTML = "<img src='img/초상화/"+ winner +".png' alt=''>";
-            winner_I.innerHTML = "<img src='img/인게임/"+ winner +".png' alt=''>";
+            winner_p.innerHTML = "<img src='img/portrait/"+ winner +".png' alt=''>";
+            winner_I.innerHTML = "<img src='img/ingame/"+ winner +".png' alt=''>";
             winner_name.innerHTML = Abnormality[winner].name;
         }
         function getCookie(cookie_name) {
@@ -27,18 +27,18 @@
         }
 
         function gotohome(){
-            window.open("./main.html", "_self");
+            window.open("./index.html", "_self");
         }
     
     </script>
     <title>Document</title>
 </head>
 <body onload="setWData();">
-    <winner1 id="winner인게임"><img src="img/인게임/0.jpg"></winner1>
-    <winner2 id="winner초상화"><img  src="img/초상화/0.png"></winner2>
+    <winner1 id="winner인게임"><img src="img/ingame/0.png"></winner1>
+    <winner2 id="winner초상화"><img  src="img/portrait/0.png"></winner2>
     <winner><div id="winner">winner</div></winner>
     <winnername>우승자는 "<span id = "winnername"></span>" 입니다</winnername>
-    <restart onclick="reStart()"><img src="img/아이콘/restart.png"> </restart>
-    <home onclick="gotohome()"><img src="img/아이콘/home.png"></home>
+    <restart onclick="reStart()"><img src="img/icon/restart.png"> </restart>
+    <home onclick="gotohome()"><img src="img/icon/home.png"></home>
 </body>
 </html>

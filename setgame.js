@@ -161,6 +161,7 @@ function next(){
 function nextmatch(){
     cnt_b++; 
     if(N / Math.pow(2,cnt_b) < 1) {
+        console.log("end");
         endGame();
         return;
     }
